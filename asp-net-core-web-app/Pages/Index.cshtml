@@ -1,4 +1,5 @@
 ﻿@page
+@using blazor_wasm_web_app.Client.Pages
 @model IndexModel
 @{
     ViewData["Title"] = "Home page";
@@ -8,3 +9,4 @@
     <h1 class="display-4">Welcome</h1>
     <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
 </div>
+@(await Html.RenderComponentAsync<Counter>(RenderMode.WebAssemblyPrerendered));

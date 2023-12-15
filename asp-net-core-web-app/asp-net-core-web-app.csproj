@@ -7,4 +7,14 @@
     <RootNamespace>asp_net_core_web_app</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.Server" Version="7.0.14" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\blazor-wasm-web-app\Client\blazor-wasm-web-app.Client.csproj" />
+    <ProjectReference Include="..\blazor-wasm-web-app\Server\blazor-wasm-web-app.Server.csproj" />
+    <ProjectReference Include="..\blazor-wasm-web-app\Shared\blazor-wasm-web-app.Shared.csproj" />
+  </ItemGroup>
+
 </Project>
