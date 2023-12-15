@@ -1,0 +1,26 @@
+# .gitignore
+
+# Ignore build folders
+bin/
+obj/
+
+# Ignore package files
+*.nupkg
+
+# Ignore temporary ASP.NET files
+App_Data/
+
+# Ignore Blazor files
+wwwroot/_framework/
+
+# Ignore config files with secrets
+*.conf
+appsettings.Development.json
+
+# Ignore Visual Studio files
+.vs/
+*.user
+*.suo
+
+# Ignore NuGet packages folder
+packages/
